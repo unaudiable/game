@@ -48,21 +48,20 @@ namespace game
 
                 Console.WriteLine("What is your name warrior!? ");
                 var myname = Console.ReadLine();
-                Console.Clear();    
+                Console.Clear();
                 Console.WriteLine($"Greetings " + myname);
 
-                Console.WriteLine("You enter a decaying room. How do you escape? ! ");
- 
+                Console.WriteLine("You enter a decaying room. How do you escape? ");
+                Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "           xx\r\n           xx\r\n           xx\r\n           xx\r\n           xx\r\n           xx\r\n    xxxxxxxxxxxxxxxx\r\n    x +-          +x\r\n    x v          + x\r\n    x    +        |x\r\n    x+ +       -- |x\r\n    xx  xxxxxxxx  xx"));
+
+
+
 
                 Console.ReadLine();
 
             }
 
         }
-
-
-
-
 
 
     }
