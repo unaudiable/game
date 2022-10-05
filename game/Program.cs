@@ -51,8 +51,7 @@ namespace game
                 Console.Clear();    
                 Console.WriteLine($"Greetings " + myname);
 
-                Console.WriteLine("You enter a decaying room. How do you escape? ");
-
+                Console.WriteLine("You enter a decaying room. How do you escape? ! ");
  
 
                 Console.ReadLine();
