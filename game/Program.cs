@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace game
 {
@@ -51,16 +53,73 @@ namespace game
                 Console.Clear();
                 Console.WriteLine($"Greetings " + myname);
 
+                Thread.Sleep(1500);
+                Console.WriteLine();
                 Console.WriteLine("You enter a decaying room. How do you escape? ");
                 Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "           xx\r\n           xx\r\n           xx\r\n           xx\r\n           xx\r\n           xx\r\n    xxxxxxxxxxxxxxxx\r\n    x +-          +x\r\n    x v          + x\r\n    x    +        |x\r\n    x+ +       -- |x\r\n    xx  xxxxxxxx  xx"));
+                Console.WriteLine();
+                {
+                string choice;
 
+                Console.WriteLine("a. Search the lampshade.");
+                Console.WriteLine("b. Search the cabinet.");
+                Console.WriteLine("c. Search the Under the mattress.");
+                Console.WriteLine();
+                Console.WriteLine("Please state your choice: ");
+                choice = Console.ReadLine().ToLower();
+                Console.Clear();
+
+                switch (choice)
+                {
+                    case "a":
+                        {
+                            Console.WriteLine("You cautiously tip-toe over to the lampshade");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("minding your bare feet on the cracked stone floor.");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("You lift up the lampshade to check inside and underneath.");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("You found nothing. Please look elsewhere.");
+                            Thread.Sleep(1500);
+                            Console.WriteLine("Press 'Enter' to continue. ");
+                            Console.ReadLine();                            
+                            break;
+                        }
+                    case "b":
+                            {
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                break;
+                            }
+                            {
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("");
+                                break;
+                            }
+                }
+
+                }
 
 
 
                 Console.ReadLine();
 
             }
-
+           
         }
 
 
