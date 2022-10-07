@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -87,27 +87,34 @@ namespace game
                         }
                     case "b":
                             {
-                                Console.WriteLine("");
+                                Console.WriteLine("You pounce to the cabinet,");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("the freezing cold floor gives you goosebumps.");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("you stretch to the rusty handle and yank it open,");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("what you find haunts you");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("A decomposing arm. You step back. Please look elsewhere.");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("Press 'Enter' to continue. ");
+                                Console.ReadLine();
                                 break;
                             }
+                    case "c":
                             {
-                                Console.WriteLine("");
+                                Console.WriteLine("You waddle over to the moist mattress");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("you examine the mattress.");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("You flip over the mattress.");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("You find the skelton key,");
                                 Thread.Sleep(1500);
-                                Console.WriteLine("");
+                                Console.WriteLine("a sense of accomplishment passes over you.");
+                                Thread.Sleep(1500);
+                                Console.WriteLine("Press 'Enter' to continue. ");
+                                Console.ReadLine();
                                 break;
                             }
                 }
@@ -121,7 +128,10 @@ namespace game
             }
            
         }
+        static void lampshade()
+        {
 
-
+        }
+            
     }
 }
